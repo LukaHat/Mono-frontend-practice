@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="./app.js"></script>
+    <title>Pokedex</title>
+</head>
+<body>
+    <main class="main-body">
+    <h1 class="main-title">Pokedex</h1>
+    
+    <table id="table">
+        <tr>
+          <th class="table-heading">Name</th>
+          <th class="table-heading">Type</th>
+          <th class="table-heading">Second Type</th>
+          <th class="table-heading"></th>
+        </tr>
+      </table>
+      <h1 class="heading">Add a new pokemon</h1>
+      <form id="createPokemonForm">
+          <label for="nameCreate">Enter pokemon name: </labe>
+          <input type="text" placeholder="Enter pokemon name" id="nameCreate" name="name"/>
+          <label for="typeCreate">Enter type: </label>
+          <input type="text" placeholder="For example: fire" id="typeCreate" name="type"/>
+          <label for="secondTypeCreate">Enter second type:</label>
+          <input type="text" placeholder="For example: fire" id="secondTypeCreate" name="secondType"/>
+          <input type="submit" value="Create"/>
+        </form>
+        <h1 class="heading">Update a new pokemon</h1>
+    <form id="updatePokemonForm">
+        <label for="nameUpdate">Enter pokemon name: </labe>
+        <input type="text"id="nameUpdate" name="name" value="Charizard"/>
+        <label for="typeUpdate">Enter type: </label>
+        <input type="text" id="typeUpdate" name="type" value="Fire"/>
+        <label for="secondTypeUpdate">Enter second type:</label>
+        <input type="text" id="secondTypeUpdate" name="secondType" value=""/>
+        <input type="submit" value="Update"/>
+    </form>
+</main>
+</body>
+</html>
